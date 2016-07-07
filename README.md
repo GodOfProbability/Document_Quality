@@ -1,5 +1,5 @@
-1. This is a one day work to replicate a document quality estimation project, the paper is
-   "http://lampsrv02.umiacs.umd.edu/pubs/Papers/lekang14-DocIQA/lekang14-DocIQA.pdf"
+## Document Quality
+1. This is a one day work to replicate a document quality estimation project, the [paper](http://lampsrv02.umiacs.umd.edu/pubs/Papers/lekang14-DocIQA/lekang14-DocIQA.pdf)
 2. First, document image of very large size (3264 X 1840) is preprocessed in the following ways:
    - Local normalisation using a 5 X 5 filter
    - Otsu binarization and further binarization to extract text/non-text regions
@@ -18,7 +18,7 @@
 NOTE: To run the code using GPU, write the following command in the terminal
       THEANO_FLAGS=device=gpu,floatX=float32 python my_keras_script.py
 
-## Experiment: Training on 20 document groups and testing on 5 document groups containing 35 images.
+#### Experiment: Training on 20 document groups and testing on 5 document groups containing 35 images.
    - Results per image level:
      LCC = 0.7871
      SROCC = 0.75404
