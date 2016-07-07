@@ -1,0 +1,26 @@
+Aim: To train on the CVIT dataset based on the architecture provided in "http://lampsrv02.umiacs.umd.edu/pubs/Papers/lekang14-DocIQA/lekang14-DocIQA.pdf, and further report the accuracy on the test data from the same dataset and SOC dataset. The results to be produced with different settings of train/test splits.
+Expected results:
+1. The training should produce results with validation loss slowly decreasing and test results on the same dataset (CVIT) dataset are close to the results acquired from the training on the SOC dataset and testing on the same dataset.
+2. The cross dataset testing results should be less.
+
+
+The Test results, with first 11 groups for training and last 4 (22) groups for testing:
+
+1. Test data: SOC
+   LLC: 0.418
+   SROCC: 0.563
+2. Test data: CVIT
+   LLC: 0.77
+   SROCC: 0.88
+The Test results, with first 12 groups for training and last 3 (15 images)groups for testing:
+
+1. Test data: SOC
+   LLC: 0.5 
+   SROCC: 0.6671
+2. Test data: CVIT
+   LLC: 0.85 
+   SROCC: 0.88
+
+Ideas:
+1. I can try adding some regularizers since the training data is highly overfitted. But to crossvalidate the regularizer takes time.
+2. 
