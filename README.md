@@ -4,6 +4,7 @@
    - Local normalisation using a 5 X 5 filter
    - Otsu binarization and further binarization to extract text/non-text regions
    - Extraction of 850, 48 X 48 patches from each document image.
+   - Preprocessing results:![](https://github.com/GodOfProbability/Document_Quality/blob/master/preprocess.png)
 3. Each patch is assigned a score that corresponds to the document image itself (weird, I know!!)
 4. Further CNN is trained (model is made with keras detailed in regression.py).
 5. Linear Correlation Coefficient and Spearmans Rank Order Correlation Coefficient is found in between
